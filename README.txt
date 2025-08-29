@@ -12,7 +12,6 @@ Archivos sincronizados para usar **Aplicación web** de Copilot Studio con **SDK
 > Si no aparece el chat a los 5 segundos, el archivo te mostrará un mensaje rojo:
 > "No se detectó el SDK". Verifica que pegaste el snippet correcto y que el canal está habilitado.
 
-
 ## Autenticación con Azure AD
 1. En Azure AD, registra una aplicación y otórgale el permiso `CopilotStudio.Copilots.Invoke`.
 2. Crea un archivo `.env` (o copia `.env.example`) con:
@@ -28,3 +27,10 @@ Archivos sincronizados para usar **Aplicación web** de Copilot Studio con **SDK
    const token = await getAccessToken();
    ```
    Si `USE_S2S_CONNECTION` es `true`, se usa un Service Principal; si es `false`, se usa flujo de usuario (Device Code).
+
+## Variables de entorno
+
+Copia `backend/.env.example` a `backend/.env` y `frontend/.env.example` a `frontend/.env`. Luego, define los valores según corresponda.
+
+- **API_KEY** (backend): clave para acceder a servicios protegidos.
+- **API_URL** (frontend): URL base del backend.

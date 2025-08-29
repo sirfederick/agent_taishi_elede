@@ -1,0 +1,49 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.chat-container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.messages li {
+  margin-bottom: 0.5rem;
+}
+
+.messages li.user {
+  text-align: right;
+  color: blue;
+}
+
+.messages li.bot {
+  text-align: left;
+  color: green;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.chat-input button {
+  padding: 0.5rem 1rem;
+}
