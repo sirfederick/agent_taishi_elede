@@ -1,0 +1,15 @@
+/* Layout base */
+html, body { height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+.agent-root { position: fixed; left: 0; right: 0; bottom: 0; top: 72px; }
+
+/* Pre-chat overlay */
+.prechat-overlay{ position:fixed; inset:0; display:grid; place-items:center; background:rgba(0,0,0,.65); z-index:30 }
+.prechat-card{ width:min(520px,92vw); background:#111827; color:#e5e7eb; border:1px solid #2b2b2b; border-radius:16px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,.35) }
+.prechat-title{ margin:0 0 .5rem 0 }
+.prechat-sub{ opacity:.75; font-size:.9rem; margin:.25rem 0 .8rem }
+.prechat-row{ display:flex; gap:.75rem; margin:.5rem 0 }
+.prechat-row>input{ flex:1; padding:.8rem .9rem; border-radius:12px; border:1px solid #374151; background:#0b1220; color:#e5e7eb }
+.prechat-btn{ width:100%; padding:.9rem 1rem; border-radius:12px; border:0; background:#2563eb; color:#fff; font-weight:600; cursor:pointer; margin-top:.5rem }
+.prechat-err{ display:none; color:#fca5a5; margin-top:.5rem }
+.prechat-warn{ display:block; color:#fbbf24; margin-top:.5rem }

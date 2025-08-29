@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Línea Directa</title>
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body>
+
+  <!-- Topbar simple (opcional, dejalo si ya tenés el tuyo) -->
+  <header id="topbar" style="height:72px;background:#083ba3;color:#fff;display:flex;align-items:center;justify-content:center">
+    <h1 style="font-size:18px;margin:0">Línea Directa</h1>
+  </header>
+
+  <!-- Contenedor donde se renderiza Web Chat -->
+  <div id="webchat-host" class="agent-root" aria-label="Asistente"></div>
+<!DOCTYPE html><html><body><iframe src="https://copilotstudio.microsoft.com/environments/60b9ea0e-2763-e584-bde3-1c89cb713ae4/bots/cr63c_agent/webchat?__version__=2" frameborder="0" style="width: 100%; height: 100%;"></iframe></body></html>
+  <!-- Pre-chat (Nombre, Email, PIN) -->
+  <div id="prechat" class="prechat-overlay" aria-hidden="false">
+    <div class="prechat-card" role="dialog" aria-modal="true">
+      <h2 class="prechat-title">Ingreso</h2>
+      <p class="prechat-sub">Nombre, email y PIN.</p>
+      <div class="prechat-row"><input id="pc-name"  placeholder="Nombre y apellido" autocomplete="name" /></div>
+      <div class="prechat-row"><input id="pc-email" placeholder="Email"             autocomplete="email" /></div>
+      <div class="prechat-row"><input id="pc-pin"   placeholder="PIN"               inputmode="numeric" /></div>
+      <button id="pc-go" class="prechat-btn">Entrar</button>
+      <p id="pc-err"  class="prechat-err">Datos inválidos o PIN incorrecto.</p>
+      <p id="pc-warn" class="prechat-warn" hidden>Falta o es inválida la cadena de conexión.</p>
+    </div>
+  </div>
+
+  <!-- Bot Framework Web Chat (UI) -->
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+  <!-- App -->
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
