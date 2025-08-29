@@ -1,0 +1,27 @@
+﻿# SO
+.DS_Store
+Thumbs.db
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node/Web
+node_modules/
+dist/
+build/
+*.log
+
+# Entornos / secretos
+.env
+*.env
+
+# Archivos grandes/paquetes
+*.zip
+*.tar
+*.gz
+
+# IDE/Editor
+.vscode/
+.idea/
