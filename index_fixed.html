@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELEDE · Agente</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { background: #0f1115; color: #e5e7eb; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .wrap { height: 100vh; width: 100vw; display: grid; grid-template-rows: auto 1fr; }
+    header { padding: 10px 14px; background: #0b6cff; color: white; font-weight: 600; letter-spacing: .2px; }
+    .iframe-box { height: 100%; width: 100%; }
+    iframe { height: 100%; width: 100%; display: block; border: 0; }
+    .hint { padding: 12px 14px; background: #111827; color: #9ca3af; font-size: 12px; }
+    .hint strong { color: #e5e7eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>ELEDE · Agente embebido</header>
+    <div class="hint">
+      Si el chat no responde: asegurá <strong>Allowed Domains</strong> en Copilot Studio → Channels → Website, incluyendo tu dominio (por ejemplo: <code>https://elede.tld</code> y <code>http://localhost</code>), y que tu página se sirva por <strong>HTTPS</strong>.
+    </div>
+    <div class="iframe-box">
+      <iframe
+        src="https://copilotstudio.microsoft.com/environments/60b9ea0e-2763-e584-bde3-1c89cb713ae4/bots/cr63c_agent/webchat?__version__=2"
+        allow="microphone; camera"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
