@@ -12,3 +12,10 @@ Archivos sincronizados para usar **Aplicación web** de Copilot Studio con **SDK
 > Si no aparece el chat a los 5 segundos, el archivo te mostrará un mensaje rojo:
 > "No se detectó el SDK". Verifica que pegaste el snippet correcto y que el canal está habilitado.
 
+
+## Variables de entorno
+
+Copia `backend/.env.example` a `backend/.env` y `frontend/.env.example` a `frontend/.env`. Luego, define los valores según corresponda.
+
+- **API_KEY** (backend): clave para acceder a servicios protegidos.
+- **API_URL** (frontend): URL base del backend.
