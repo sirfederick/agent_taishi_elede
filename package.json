@@ -1,0 +1,16 @@
+{
+  "name": "agent_taishi_elede",
+  "version": "1.0.0",
+  "description": "Backend helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node backend/auth.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@azure/identity": "^4.11.1"
+  }
+}
