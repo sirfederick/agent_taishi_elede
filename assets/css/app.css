@@ -1,6 +1,6 @@
 /* Layout base */
 html, body { height: 100%; }
-body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background-color: hsl(0, 0%, 42%); }
 .agent-root { position: fixed; left: 0; right: 0; bottom: 0; top: 72px; }
 
 /* Pre-chat overlay */

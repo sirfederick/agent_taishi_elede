@@ -38,7 +38,7 @@
     const directLine = CopilotStudioWebChat.createConnection(client, { showTyping: true });
 
     const styleOptions = {
-      backgroundColor: "transparent",
+      backgroundColor: "hsl(0, 0%, 42%)",
       bubbleBackground: "#2f2f2f",
       bubbleBorderColor: "#3a3a3a",
       bubbleTextColor: "#ffffff",
